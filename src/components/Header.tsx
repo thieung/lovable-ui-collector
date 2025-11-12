@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/ai2sql-logo.png";
+import { Database } from "lucide-react";
 
 const Header = () => {
   return (
@@ -7,7 +7,9 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="AI2SQL Logo" className="w-10 h-10" />
+            <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-glow rounded-lg flex items-center justify-center">
+              <Database className="w-6 h-6 text-white" />
+            </div>
             <span className="text-xl font-heading font-bold">
               AI<span className="gradient-text">2SQL</span>
             </span>
